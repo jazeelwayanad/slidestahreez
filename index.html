@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tahreez Result Live Update</title>
+    <style>
+    body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  
+  .slider{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    position: absolute;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 100vw;
+    height: 100vh;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+    
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="images/1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/2.png" alt="">
+        </div>
+        <!-- <div class="slide">
+          <img src="images/4.png" alt="">
+        </div> -->
+        <!--slide images end-->
+      </div>
+    <!--image slider end-->	
+   
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 3){
+        counter = 1;
+      }
+    }, 5555);
+    </script>
+</body>
+</html>
