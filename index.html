@@ -71,9 +71,9 @@
       #radio7:checked ~ .first{
         margin-left: -120%;
       }
-      #radio8:checked ~ .first{
+/*       #radio8:checked ~ .first{
         margin-left: -140%;
-      }
+      } */
 
       /*css for automatic navigation*/
 
@@ -105,25 +105,25 @@
         <input type="radio" name="radio-btn" id="radio5" />
         <input type="radio" name="radio-btn" id="radio6" />
         <input type="radio" name="radio-btn" id="radio7" />
-        <input type="radio" name="radio-btn" id="radio8" />
+<!--         <input type="radio" name="radio-btn" id="radio8" /> -->
 
         <!--radio buttons end-->
         <!--slide images start-->
 
         <div class="slide first">
-          <img src="images/chr1.png" alt="" />
+          <img src="images/day3-1.png" alt="" />
         </div>
         <div class="slide">
-          <img src="images/pk1.png" alt="" />
+          <img src="images/day3-2.png" alt="" />
         </div>
         <div class="slide">
-          <img src="images/mnp1.png" alt="" />
+          <img src="images/day3-3.png" alt="" />
         </div>
-        <div class="slide">
+<!--         <div class="slide">
           <img src="images/mlp1.png" alt="" />
-        </div>
+        </div> -->
         <div class="slide">
-          <img src="images/chart.png" alt="" />
+          <img src="images/day3-4.png" alt="" />
         </div>
         <div class="slide">
           <img src="images/toppers.png" alt="" />
@@ -144,7 +144,7 @@
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 8) {
+        if (counter > 7) {
           counter = 1;
         }
       }, 5555);
