@@ -71,7 +71,9 @@
       #radio7:checked ~ .first{
         margin-left: -120%;
       }
-
+      #radio8:checked ~ .first{
+        margin-left: -140%;
+      }
 
       /*css for automatic navigation*/
 
@@ -103,6 +105,7 @@
         <input type="radio" name="radio-btn" id="radio5" />
         <input type="radio" name="radio-btn" id="radio6" />
         <input type="radio" name="radio-btn" id="radio7" />
+        <input type="radio" name="radio-btn" id="radio8" />
 
         <!--radio buttons end-->
         <!--slide images start-->
@@ -128,6 +131,9 @@
         <div class="slide">
           <img src="images/insta.png" alt="" />
         </div>
+        <div class="slide">
+          <img src="images/adikrp.png" alt="" />
+        </div>
         <!--slide images end-->
       </div>
     </div>
@@ -138,7 +144,7 @@
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 7) {
+        if (counter > 8) {
           counter = 1;
         }
       }, 5555);
