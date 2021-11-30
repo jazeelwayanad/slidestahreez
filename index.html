@@ -65,10 +65,10 @@
       #radio5:checked ~ .first{
         margin-left: -80%;
       }
-/*       #radio6:checked ~ .first{
+      #radio6:checked ~ .first{
         margin-left: -100%;
       }
-      #radio7:checked ~ .first{
+/*       #radio7:checked ~ .first{
         margin-left: -120%;
       } */
 /*       #radio8:checked ~ .first{
@@ -103,16 +103,16 @@
         <input type="radio" name="radio-btn" id="radio3" />
         <input type="radio" name="radio-btn" id="radio4" />
         <input type="radio" name="radio-btn" id="radio5" />
-<!--         <input type="radio" name="radio-btn" id="radio6" />
-        <input type="radio" name="radio-btn" id="radio7" /> -->
+        <input type="radio" name="radio-btn" id="radio6" />
+<!--         <input type="radio" name="radio-btn" id="radio7" /> -->
 <!--         <input type="radio" name="radio-btn" id="radio8" /> -->
 
         <!--radio buttons end-->
         <!--slide images start-->
-<!--         <div class="slide first">
+        <div class="slide first">
           <img src="images/toppers.png" alt="" />
         </div>
-        <div class="slide ">
+<!--         <div class="slide ">
           <img src="images/total.png" alt="" />
         </div> -->
         <div class="slide first">
@@ -158,7 +158,7 @@
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 5) {
+        if (counter > 6) {
           counter = 1;
         }
       }, 5555);
