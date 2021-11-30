@@ -65,9 +65,9 @@
       #radio5:checked ~ .first{
         margin-left: -80%;
       }
-      #radio6:checked ~ .first{
+/*       #radio6:checked ~ .first{
         margin-left: -100%;
-      }
+      } */
 /*       #radio7:checked ~ .first{
         margin-left: -120%;
       } */
@@ -103,7 +103,7 @@
         <input type="radio" name="radio-btn" id="radio3" />
         <input type="radio" name="radio-btn" id="radio4" />
         <input type="radio" name="radio-btn" id="radio5" />
-        <input type="radio" name="radio-btn" id="radio6" />
+<!--         <input type="radio" name="radio-btn" id="radio6" /> -->
 <!--         <input type="radio" name="radio-btn" id="radio7" /> -->
 <!--         <input type="radio" name="radio-btn" id="radio8" /> -->
 
@@ -142,9 +142,9 @@
 <!--         <div class="slide">
           <img src="images/judges.png" alt="" />
         </div> -->
-        <div class="slide">
+<!--         <div class="slide">
           <img src="images/adikrp.png" alt="" />
-        </div>
+        </div> -->
 <!--           <div class="slide">
           <img src="images/insta.png" alt="" />
         </div> -->
@@ -158,7 +158,7 @@
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 6) {
+        if (counter > 5) {
           counter = 1;
         }
       }, 5555);
