@@ -62,10 +62,10 @@
       #radio4:checked ~ .first{
         margin-left: -60%;
        }
-/*       #radio5:checked ~ .first{
+      #radio5:checked ~ .first{
         margin-left: -80%;
       }
-      #radio6:checked ~ .first{
+/*       #radio6:checked ~ .first{
         margin-left: -100%;
       }
       #radio7:checked ~ .first{
@@ -102,19 +102,19 @@
         <input type="radio" name="radio-btn" id="radio2" />
         <input type="radio" name="radio-btn" id="radio3" />
         <input type="radio" name="radio-btn" id="radio4" />
-<!--         <input type="radio" name="radio-btn" id="radio5" />
-        <input type="radio" name="radio-btn" id="radio6" />
+        <input type="radio" name="radio-btn" id="radio5" />
+<!--         <input type="radio" name="radio-btn" id="radio6" />
         <input type="radio" name="radio-btn" id="radio7" /> -->
 <!--         <input type="radio" name="radio-btn" id="radio8" /> -->
 
         <!--radio buttons end-->
         <!--slide images start-->
-        <div class="slide first">
+<!--         <div class="slide first">
           <img src="images/toppers.png" alt="" />
         </div>
         <div class="slide ">
           <img src="images/total.png" alt="" />
-        </div>
+        </div> -->
 <!--         <div class="slide">
           <img src="images/chr1.png" alt="" />
         </div>
@@ -124,12 +124,21 @@
         <div class="slide">
           <img src="images/mlp1.png" alt="" />
         </div> -->
-<!--         <div class="slide">
-          <img src="images/resultsoon.png" alt="" />
-        </div> -->
         <div class="slide">
-          <img src="images/judges.png" alt="" />
+          <img src="images/resultsoon.png" alt="" />
         </div>
+                <div class="slide">
+          <img src="images/presentation.png" alt="" />
+        </div>
+                <div class="slide">
+          <img src="images/resultsoon2.png" alt="" />
+        </div>
+                <div class="slide">
+          <img src="images/resultsoon3.png" alt="" />
+        </div>
+<!--         <div class="slide">
+          <img src="images/judges.png" alt="" />
+        </div> -->
         <div class="slide">
           <img src="images/adikrp.png" alt="" />
         </div>
@@ -146,7 +155,7 @@
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 4) {
+        if (counter > 5) {
           counter = 1;
         }
       }, 5555);
